@@ -4,15 +4,16 @@ import { DisTubeEvent, type Metadata } from "../..";
 import type { Playlist, Queue } from "distube";
 
 export default class AddListEvent extends DisTubeEvent<Events.ADD_LIST> {
-  readonly name = Events.ADD_LIST;
-  run(_queue: Queue, playlist: Playlist<Metadata>) {
-    playlist.metadata.interaction.editReply({
-      embeds: [
-        new EmbedBuilder()
-          .setColor("Blurple")
-          .setTitle("DisTube")
-          .setDescription(`Added \`${playlist.name}\` (${playlist.songs.length} songs) to the queue`),
-      ],
-    });
-  }
+	readonly name = Events.ADD_LIST;
+	run(_queue: Queue, playlist: Playlist<Metadata>) {
+		playlist.metadata.interaction.editReply({
+			embeds: [
+				new EmbedBuilder()
+					.setColor("Blurple")
+					.setDescription(
+						`Added \`${playlist.name}\` (${playlist.songs.length} songs) to the queue`,
+					),
+			],
+		});
+	}
 }

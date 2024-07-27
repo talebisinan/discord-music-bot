@@ -1,0 +1,38 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"files": {
+		"ignore": [
+			"*/sdk/*.ts",
+			"*/payout_sdk/*.ts",
+			"*/w2_sdk/*.ts",
+			"*/backend_sdk/*.ts",
+			"*/coverage/*"
+		]
+	},
+	"formatter": {
+		"ignore": ["configuration_schema.json"]
+	},
+	"json": {
+		"formatter": {
+			"indentStyle": "space",
+			"lineWidth": 1
+		}
+	},
+	"vcs": {
+		"clientKind": "git",
+		"enabled": true,
+		"useIgnoreFile": true
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": true,
+			"style": {
+				"noNonNullAssertion": "off"
+			}
+		}
+	},
+	"organizeImports": {
+		"enabled": true
+	}
+}
