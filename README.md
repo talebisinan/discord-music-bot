@@ -5,6 +5,7 @@ Run  `bun install` to install the dependencies
 Then `bun start` to run the bot
 
 > Make sure that ffmpeg is installed on your system
+> 
 > For windows make sure to install from https://www.gyan.dev/ffmpeg/builds/#release-builds
 
 Commands:
