@@ -24,13 +24,13 @@
 		"@distube/spotify": "^2.0.2",
 		"@distube/youtube": "^1.0.4",
 		"discord.js": "^14.18.0",
-		"distube": "^5.0.6",
+		"distube": "^5.0.7",
 		"opusscript": "^0.1.1",
 		"sodium-native": "^4.3.3"
 	},
 	"devDependencies": {
 		"@types/node": "^20.17.30",
 		"@biomejs/biome": "^1.9.4",
-		"typescript": "^5.8.2"
+		"typescript": "^5.8.3"
 	}
 }
